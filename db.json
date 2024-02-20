@@ -1,33 +1,559 @@
 {
-  "projects": [
+  "restaurants": [
     {
       "id": 1,
-      "title": "Module 2 Project",
-      "description": "Module 2 project - Integrate a React app with backend.",
-      "userId": 1
+      "name": "Belcanto",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.8,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Belcanto is a Michelin-starred fine dining restaurant known for its innovative Portuguese cuisine crafted by Chef José Avillez. With impeccable service and an elegant ambiance, it offers a truly memorable dining experience."
     },
     {
       "id": 2,
-      "title": "Module 3 Project",
-      "description": "Create a full-stack application using MERN stack.",
-      "userId": 1
-    }
-  ],
-  "tasks": [
-    {
-      "id": 1,
-      "projectId": 1,
-      "description": "Use Vite to create a basic React app"
-    },
-    {
-      "id": 2,
-      "projectId": 1,
-      "description": "Install React Router and setup routes"
+      "name": "Taberna da Rua das Flores",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Taberna da Rua das Flores is a cozy Portuguese restaurant located in the heart of Chiado. It offers a menu of traditional Portuguese dishes with a modern twist, all served in a warm and inviting atmosphere."
     },
     {
       "id": 3,
-      "projectId": 2,
-      "description": "Create a form with 5 input fields"
+      "name": "100 Maneiras",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "100 Maneiras is an upscale fine dining restaurant located in the trendy Bairro Alto district. It offers an innovative tasting menu featuring Portuguese and international flavors, all served in a sophisticated and intimate setting."
+    },
+    {
+      "id": 4,
+      "name": "Cantinho Lusitano",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho Lusitano is a charming Portuguese restaurant located in the vibrant Bairro Alto district. It offers a menu of traditional Portuguese dishes made with fresh, locally-sourced ingredients, all served in a cozy and welcoming atmosphere."
+    },
+    {
+      "id": 5,
+      "name": "Bistro 100 Maneiras",
+      "category": "European",
+      "price_range": "$$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Bistro 100 Maneiras is a chic European bistro located in the trendy Bairro Alto district. It offers a menu of creative European dishes and innovative cocktails, all served in a stylish and sophisticated setting."
+    },
+    {
+      "id": 6,
+      "name": "Feitoria",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.8,
+      "reviews": [],
+      "area": "Belém",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Feitoria is an award-winning fine dining restaurant located in the historic Belém district. It offers a sophisticated menu of modern Portuguese cuisine, all served in an elegant and refined atmosphere."
+    },
+    {
+      "id": 7,
+      "name": "Tasca da Esquina",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Campo de Ourique",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Tasca da Esquina is a cozy Portuguese restaurant located in the charming Campo de Ourique neighborhood. It offers a menu of traditional Portuguese dishes with a modern twist, all served in a relaxed and inviting atmosphere."
+    },
+    {
+      "id": 8,
+      "name": "Mini Bar Teatro",
+      "category": "European",
+      "price_range": "$$$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Mini Bar Teatro is an upscale European restaurant located in the historic Chiado district. It offers an innovative tasting menu featuring creative dishes and fine wines, all served in an elegant and theatrical setting."
+    },
+    {
+      "id": 9,
+      "name": "Cantinho do Avillez",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho do Avillez offers a cozy and welcoming atmosphere where guests can enjoy modern Portuguese cuisine with a creative twist. Chef José Avillez's culinary creations are sure to delight your taste buds."
+    },
+    {
+      "id": 10,
+      "name": "Cervejaria Ramiro",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Intendente",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Ramiro is a renowned seafood restaurant known for its fresh seafood and vibrant atmosphere. From succulent prawns to flavorful clams, it offers a wide variety of seafood dishes that are sure to please any palate."
+    },
+    {
+      "id": 11,
+      "name": "Solar dos Presuntos",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Rossio",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Solar dos Presuntos is a traditional Portuguese restaurant known for its hearty and delicious dishes. With a cozy ambiance and friendly service, it's a great place to enjoy authentic Portuguese cuisine."
+    },
+    {
+      "id": 12,
+      "name": "Sea Me - Peixaria Moderna",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Sea Me - Peixaria Moderna is a modern seafood restaurant offering a creative twist on traditional Portuguese seafood dishes. With a lively atmosphere and innovative menu, it's a must-visit for seafood lovers."
+    },
+    {
+      "id": 13,
+      "name": "Casa de Pasto",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Alfama",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Casa de Pasto is a charming Portuguese restaurant located in the historic Alfama district. It offers a cozy atmosphere and traditional Portuguese dishes made with fresh, locally-sourced ingredients."
+    },
+    {
+      "id": 14,
+      "name": "Clube de Jornalistas",
+      "category": "Portuguese",
+      "price_range": "$$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Santos",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Clube de Jornalistas is a sophisticated Portuguese restaurant located in the Santos neighborhood. It offers a refined menu of traditional Portuguese dishes with a contemporary twist, all served in an elegant and intimate setting."
+    },
+    {
+      "id": 15,
+      "name": "Cervejaria Trindade",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Trindade is a historic seafood restaurant housed in a former monastery in the Chiado district. It offers a menu of fresh seafood dishes and traditional Portuguese cuisine, all served in a unique and atmospheric setting."
+    },
+    {
+      "id": 16,
+      "name": "Pharmacia",
+      "category": "European",
+      "price_range": "$$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Santa Catarina",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Pharmacia is a unique restaurant located in the Santa Catarina neighborhood. Housed in a former pharmacy, it offers a creative menu of European dishes inspired by pharmaceutical themes, all served in a quirky and charming ambiance."
+    },
+    {
+      "id": 17,
+      "name": "Cantinho do Avillez",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho do Avillez offers a cozy and welcoming atmosphere where guests can enjoy modern Portuguese cuisine with a creative twist. Chef José Avillez's culinary creations are sure to delight your taste buds."
+    },
+    {
+      "id": 18,
+      "name": "Casa do Alentejo",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Rossio",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Casa do Alentejo is a charming Portuguese restaurant located in the Rossio district. It offers a menu of traditional Alentejo cuisine in a beautifully restored 17th-century palace, complete with ornate tiles and elegant furnishings."
+    },
+    {
+      "id": 19,
+      "name": "Taberna da Rua das Flores",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Taberna da Rua das Flores is a cozy Portuguese restaurant located in the heart of Chiado. It offers a menu of traditional Portuguese dishes with a modern twist, all served in a warm and inviting atmosphere."
+    },
+    {
+      "id": 20,
+      "name": "A Cevicheria",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Príncipe Real",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "A Cevicheria is a trendy restaurant specializing in Peruvian ceviche dishes with a Portuguese twist. The vibrant atmosphere and delicious seafood make it a favorite among locals and tourists alike."
+    },
+    {
+      "id": 21,
+      "name": "Time Out Market Lisboa",
+      "category": "Food Hall",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Cais do Sodré",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Time Out Market Lisboa is a bustling food hall featuring a wide variety of stalls offering gourmet dishes from some of Lisbon's best chefs. It's the perfect place to sample a range of cuisines in one location."
+    },
+    {
+      "id": 22,
+      "name": "Cantinho do Avillez",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho do Avillez offers a cozy and welcoming atmosphere where guests can enjoy modern Portuguese cuisine with a creative twist. Chef José Avillez's culinary creations are sure to delight your taste buds."
+    },
+    {
+      "id": 23,
+      "name": "100 Maneiras",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "100 Maneiras is an upscale fine dining restaurant located in the trendy Bairro Alto district. It offers an innovative tasting menu featuring Portuguese and international flavors, all served in a sophisticated and intimate setting."
+    },
+    {
+      "id": 24,
+      "name": "Cervejaria Ramiro",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Intendente",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Ramiro is a renowned seafood restaurant known for its fresh seafood and vibrant atmosphere. From succulent prawns to flavorful clams, it offers a wide variety of seafood dishes that are sure to please any palate."
+    },
+    {
+      "id": 25,
+      "name": "Solar dos Presuntos",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Rossio",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Solar dos Presuntos is a traditional Portuguese restaurant known for its hearty and delicious dishes. With a cozy ambiance and friendly service, it's a great place to enjoy authentic Portuguese cuisine."
+    },
+    {
+      "id": 26,
+      "name": "Sea Me - Peixaria Moderna",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Sea Me - Peixaria Moderna is a modern seafood restaurant offering a creative twist on traditional Portuguese seafood dishes. With a lively atmosphere and innovative menu, it's a must-visit for seafood lovers."
+    },
+    {
+      "id": 27,
+      "name": "Casa de Pasto",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Alfama",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Casa de Pasto is a charming Portuguese restaurant located in the historic Alfama district. It offers a cozy atmosphere and traditional Portuguese dishes made with fresh, locally-sourced ingredients."
+    },
+    {
+      "id": 28,
+      "name": "Clube de Jornalistas",
+      "category": "Portuguese",
+      "price_range": "$$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Santos",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Clube de Jornalistas is a sophisticated Portuguese restaurant located in the Santos neighborhood. It offers a refined menu of traditional Portuguese dishes with a contemporary twist, all served in an elegant and intimate setting."
+    },
+    {
+      "id": 29,
+      "name": "Cervejaria Trindade",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Trindade is a historic seafood restaurant housed in a former monastery in the Chiado district. It offers a menu of fresh seafood dishes and traditional Portuguese cuisine, all served in a unique and atmospheric setting."
+    },
+    {
+      "id": 30,
+      "name": "Pharmacia",
+      "category": "European",
+      "price_range": "$$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Santa Catarina",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Pharmacia is a unique restaurant located in the Santa Catarina neighborhood. Housed in a former pharmacy, it offers a creative menu of European dishes inspired by pharmaceutical themes, all served in a quirky and charming ambiance."
+    },
+    {
+      "id": 31,
+      "name": "A Cevicheria",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Príncipe Real",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "A Cevicheria is a trendy restaurant specializing in Peruvian ceviche dishes with a Portuguese twist. The vibrant atmosphere and delicious seafood make it a favorite among locals and tourists alike."
+    },
+    {
+      "id": 32,
+      "name": "Time Out Market Lisboa",
+      "category": "Food Hall",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Cais do Sodré",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Time Out Market Lisboa is a bustling food hall featuring a wide variety of stalls offering gourmet dishes from some of Lisbon's best chefs. It's the perfect place to sample a range of cuisines in one location."
+    },
+    {
+      "id": 33,
+      "name": "Cantinho do Avillez",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho do Avillez offers a cozy and welcoming atmosphere where guests can enjoy modern Portuguese cuisine with a creative twist. Chef José Avillez's culinary creations are sure to delight your taste buds."
+    },
+    {
+      "id": 34,
+      "name": "Belcanto",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.8,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Belcanto is a Michelin-starred fine dining restaurant known for its innovative Portuguese cuisine crafted by Chef José Avillez. With impeccable service and an elegant ambiance, it offers a truly memorable dining experience."
+    },
+    {
+      "id": 35,
+      "name": "Taberna da Rua das Flores",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Taberna da Rua das Flores is a cozy Portuguese restaurant located in the heart of Chiado. It offers a menu of traditional Portuguese dishes with a modern twist, all served in a warm and inviting atmosphere."
+    },
+    {
+      "id": 36,
+      "name": "100 Maneiras",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "100 Maneiras is an upscale fine dining restaurant located in the trendy Bairro Alto district. It offers an innovative tasting menu featuring Portuguese and international flavors, all served in a sophisticated and intimate setting."
+    },
+    {
+      "id": 37,
+      "name": "Cantinho Lusitano",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho Lusitano is a charming Portuguese restaurant located in the vibrant Bairro Alto district. It offers a menu of traditional Portuguese dishes made with fresh, locally-sourced ingredients, all served in a cozy and welcoming atmosphere."
+    },
+    {
+      "id": 38,
+      "name": "Bistro 100 Maneiras",
+      "category": "European",
+      "price_range": "$$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Bairro Alto",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Bistro 100 Maneiras is a chic European bistro located in the trendy Bairro Alto district. It offers a menu of creative European dishes and innovative cocktails, all served in a stylish and sophisticated setting."
+    },
+    {
+      "id": 39,
+      "name": "Feitoria",
+      "category": "Fine Dining",
+      "price_range": "$$$$",
+      "ratings": 4.8,
+      "reviews": [],
+      "area": "Belém",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Feitoria is an award-winning fine dining restaurant located in the historic Belém district. It offers a sophisticated menu of modern Portuguese cuisine, all served in an elegant and refined atmosphere."
+    },
+    {
+      "id": 40,
+      "name": "Tasca da Esquina",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Campo de Ourique",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Tasca da Esquina is a cozy Portuguese restaurant located in the charming Campo de Ourique neighborhood. It offers a menu of traditional Portuguese dishes with a modern twist, all served in a relaxed and inviting atmosphere."
+    },
+    {
+      "id": 41,
+      "name": "Mini Bar Teatro",
+      "category": "European",
+      "price_range": "$$$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Mini Bar Teatro is an upscale European restaurant located in the historic Chiado district. It offers an innovative tasting menu featuring creative dishes and fine wines, all served in an elegant and theatrical setting."
+    },
+    {
+      "id": 42,
+      "name": "Cantinho do Avillez",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cantinho do Avillez offers a cozy and welcoming atmosphere where guests can enjoy modern Portuguese cuisine with a creative twist. Chef José Avillez's culinary creations are sure to delight your taste buds."
+    },
+    {
+      "id": 43,
+      "name": "Cervejaria Ramiro",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.7,
+      "reviews": [],
+      "area": "Intendente",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Ramiro is a renowned seafood restaurant known for its fresh seafood and vibrant atmosphere. From succulent prawns to flavorful clams, it offers a wide variety of seafood dishes that are sure to please any palate."
+    },
+    {
+      "id": 44,
+      "name": "Solar dos Presuntos",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Rossio",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Solar dos Presuntos is a traditional Portuguese restaurant known for its hearty and delicious dishes. With a cozy ambiance and friendly service, it's a great place to enjoy authentic Portuguese cuisine."
+    },
+    {
+      "id": 45,
+      "name": "Sea Me - Peixaria Moderna",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Sea Me - Peixaria Moderna is a modern seafood restaurant offering a creative twist on traditional Portuguese seafood dishes. With a lively atmosphere and innovative menu, it's a must-visit for seafood lovers."
+    },
+    {
+      "id": 46,
+      "name": "Casa de Pasto",
+      "category": "Portuguese",
+      "price_range": "$$ - $$$",
+      "ratings": 4.3,
+      "reviews": [],
+      "area": "Alfama",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Casa de Pasto is a charming Portuguese restaurant located in the historic Alfama district. It offers a cozy atmosphere and traditional Portuguese dishes made with fresh, locally-sourced ingredients."
+    },
+    {
+      "id": 47,
+      "name": "Clube de Jornalistas",
+      "category": "Portuguese",
+      "price_range": "$$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Santos",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Clube de Jornalistas is a sophisticated Portuguese restaurant located in the Santos neighborhood. It offers a refined menu of traditional Portuguese dishes with a contemporary twist, all served in an elegant and intimate setting."
+    },
+    {
+      "id": 48,
+      "name": "Cervejaria Trindade",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.4,
+      "reviews": [],
+      "area": "Chiado",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Cervejaria Trindade is a historic seafood restaurant housed in a former monastery in the Chiado district. It offers a menu of fresh seafood dishes and traditional Portuguese cuisine, all served in a unique and atmospheric setting."
+    },
+    {
+      "id": 49,
+      "name": "Pharmacia",
+      "category": "European",
+      "price_range": "$$$",
+      "ratings": 4.6,
+      "reviews": [],
+      "area": "Santa Catarina",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "Pharmacia is a unique restaurant located in the Santa Catarina neighborhood. Housed in a former pharmacy, it offers a creative menu of European dishes inspired by pharmaceutical themes, all served in a quirky and charming ambiance."
+    },
+    {
+      "id": 50,
+      "name": "A Cevicheria",
+      "category": "Seafood",
+      "price_range": "$$ - $$$",
+      "ratings": 4.5,
+      "reviews": [],
+      "area": "Príncipe Real",
+      "image_url": "https://via.placeholder.com/500x300",
+      "description": "A Cevicheria is a trendy restaurant specializing in Peruvian ceviche dishes with a Portuguese twist. The vibrant atmosphere and delicious seafood make it a favorite among locals and tourists alike."
+    },
+    {
+      "userReview": "dddd",
+      "username": "sws",
+      "id": 51
     }
   ]
 }
